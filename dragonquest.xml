@@ -1,0 +1,2026 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>admin</LastAuthor>
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2014-10-10T00:41:13Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-9.1.0.4855</KSOProductBuildVer>
+ </CustomDocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12540</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s41" ss:Name="常规 2">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63" ss:Parent="s41">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="dragonquest">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="24" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="123.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="108"/>
+   <Column ss:AutoFitWidth="0" ss:Width="135.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="115.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="106.5"/>
+   <Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="128.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="125.25" ss:Span="1"/>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="String">boss等级</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">boss生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">阶段1开始生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">阶段2开始生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">阶段3开始生命值</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">boss总奖励金钱</Data><Comment
+      ss:Author="admin"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">admin:&#10;boss的击杀奖励为boss的总奖励的百分比。这个比例在总表中配置。</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">boss总奖励声望</Data></Cell>
+    <Cell ss:Index="10" ss:StyleID="s65"><Data ss:Type="String">阶段1生命值开始比例</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">阶段2生命值开始比例</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">阶段3生命值开始比例</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30000</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">40000</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0.8</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">100100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80080</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30030</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">43200</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">60000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">100200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80160</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30060</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">46656</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">70000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">100300</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100300</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80240</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30090</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">50389</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">80000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">100400</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100400</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80320</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30120</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">54421</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">90000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">100500</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100500</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80400</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30150</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">58775</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">100000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">100600</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100600</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80480</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30180</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">63477</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">110000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">100700</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100700</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80560</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30210</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">68556</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">120000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">100800</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100800</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80640</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30240</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">74041</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">130000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">100900</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">100900</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80720</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30270</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">79965</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">140000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">101000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80800</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30300</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">86363</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">150000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">101100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80880</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30330</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">93273</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">160000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">101200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">80960</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30360</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">100735</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">170000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">101300</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101300</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81040</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30390</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">108794</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">180000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">101400</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101400</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81120</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30420</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">117498</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">190000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">101500</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101500</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30450</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">126898</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">200000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">101600</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101600</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81280</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30480</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">137050</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">210000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">101700</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101700</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81360</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30510</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">148014</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">220000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">101800</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101800</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81440</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30540</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">159856</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">230000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">101900</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">101900</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81520</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30570</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">172645</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">240000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">102000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">102000</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81600</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30600</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">186457</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">250000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">102100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">102100</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81680</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30630</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">201374</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">260000</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">102200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-1]*R2C10)"><Data ss:Type="Number">102200</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-2]*R2C11)"><Data ss:Type="Number">81760</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=INT(RC[-3]*R2C12)"><Data ss:Type="Number">30660</Data></Cell>
+    <Cell ss:StyleID="s41" ss:Formula="=ROUNDUP(R[-1]C*1.08,0)"><Data
+      ss:Type="Number">217484</Data></Cell>
+    <Cell ss:StyleID="s41"><Data ss:Type="Number">270000</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111107"
+     x:Right="0.69861111111111107" x:Top="0.75"/>
+   </PageSetup>
+   <PageBreakZoom>60</PageBreakZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="dragonquestphase1">
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="24" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="144"/>
+   <Column ss:AutoFitWidth="0" ss:Width="81.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="127.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="86.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="65.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="107.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="78"/>
+   <Row>
+    <Cell ss:StyleID="s65"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">boss等级</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s65"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">boss第一阶段动画id</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位1动画id</Data></Cell>
+    <Cell><Data ss:Type="String">部位1武力</Data></Cell>
+    <Cell><Data ss:Type="String">部位1智力</Data></Cell>
+    <Cell><Data ss:Type="String">部位1物防</Data></Cell>
+    <Cell><Data ss:Type="String">部位1法防</Data></Cell>
+    <Cell><Data ss:Type="String">部位技能id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2动画id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2武力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2智力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2物防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2法防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2技能id</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:Index="18"><Data ss:Type="String">部位1武力</Data></Cell>
+    <Cell><Data ss:Type="String">部位1智力</Data></Cell>
+    <Cell><Data ss:Type="String">部位1物防</Data></Cell>
+    <Cell><Data ss:Type="String">部位1法防</Data></Cell>
+    <Cell><Data ss:Type="String">难度倍率</Data></Cell>
+    <Cell ss:Index="24" ss:StyleID="s65"><Data ss:Type="String">部位2武力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2智力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2物防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">部位2法防</Data></Cell>
+    <Cell><Data ss:Type="String">难度倍率</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=#N/A"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=#N/A"><Data ss:Type="Number">112</Data></Cell>
+    <Cell ss:Formula="=#N/A"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=#N/A"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">112</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell ss:Index="18" ss:Formula="=100"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">122</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1002</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">122</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1002</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">132</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1003</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">132</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1003</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">142</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1004</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">142</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1004</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">152</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1005</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">152</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1005</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">162</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1006</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">162</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1006</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">172</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1007</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">172</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1007</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">182</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1008</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">182</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1008</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">192</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1009</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">192</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1009</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1010</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1010</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">212</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1011</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">212</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1011</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">222</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1012</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">222</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1012</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">232</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1013</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">232</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1013</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">242</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1014</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">242</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1014</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">252</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1015</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">252</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1015</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">262</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1016</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">262</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1016</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">272</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1017</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">272</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1017</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">282</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1018</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">282</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1018</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">292</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1019</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">292</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1019</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">302</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1020</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">302</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1020</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">312</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1021</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">312</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1021</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">322</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1022</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">322</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1022</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">332</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C22"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1023</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">332</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[14]*R2C28"><Data ss:Type="Number">332</Data></Cell>
+    <Cell ss:Formula="=1023"><Data ss:Type="Number">1023</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="24"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111107"
+     x:Right="0.69861111111111107" x:Top="0.75"/>
+   </PageSetup>
+   <Zoom>85</Zoom>
+   <PageBreakZoom>60</PageBreakZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="dragonquestphase2">
+  <Table ss:ExpandedColumnCount="28" ss:ExpandedRowCount="25" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="77.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="94.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="89.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="135.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75.75" ss:Span="1"/>
+   <Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="77.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="94.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="89.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="135.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="78"/>
+   <Column ss:AutoFitWidth="0" ss:Width="166.5" ss:Span="1"/>
+   <Column ss:Index="20" ss:AutoFitWidth="0" ss:Width="53.25"/>
+   <Row>
+    <Cell ss:StyleID="s65"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">boss等级</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1动画id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1武力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1智力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1物防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1法防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪1技能id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2动画id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2武力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2智力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2物防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2法防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪2技能id</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">战斗失败扣boss血量</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">战斗胜利扣boss血量</Data></Cell>
+    <Cell ss:Index="23" ss:StyleID="s65"><Data ss:Type="String">小怪生命值</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪武力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪智力</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪物防</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小怪法防</Data></Cell>
+    <Cell><Data ss:Type="String">难度倍率</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">112</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100100</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">122</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100100</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100100</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100200</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">132</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100200</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100200</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100300</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">142</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100300</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100300</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100400</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">152</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100400</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100400</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100500</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">162</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100500</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100500</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100600</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">172</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100600</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100600</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100700</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">182</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100700</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell><Data ss:Type="Number">340</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100700</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100800</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">192</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100800</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell><Data ss:Type="Number">360</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100800</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">100900</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">100900</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell><Data ss:Type="Number">380</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">100900</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101000</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">212</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101000</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="Number">400</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101000</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101100</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">222</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101100</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell><Data ss:Type="Number">420</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101100</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101200</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">232</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101200</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell><Data ss:Type="Number">440</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101200</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101300</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">242</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101300</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell><Data ss:Type="Number">460</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101300</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101400</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">252</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101400</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell><Data ss:Type="Number">480</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101400</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101500</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">262</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101500</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell><Data ss:Type="Number">500</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101500</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101600</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">272</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101600</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell><Data ss:Type="Number">520</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101600</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101700</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">282</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101700</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell><Data ss:Type="Number">540</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101700</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101800</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">292</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101800</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell><Data ss:Type="Number">560</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101800</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">101900</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">302</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">101900</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell><Data ss:Type="Number">580</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">101900</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">102000</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">312</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">102000</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell><Data ss:Type="Number">600</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">102000</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">102100</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">322</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">102100</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell><Data ss:Type="Number">620</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">102100</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">11001</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">102200</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">332</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[20]*R2C28"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">11002</Data></Cell>
+    <Cell><Data ss:Type="Number">102200</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell><Data ss:Type="Number">640</Data></Cell>
+    <Cell ss:Index="23"><Data ss:Type="Number">102200</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="28"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111107"
+     x:Right="0.69861111111111107" x:Top="0.75"/>
+   </PageSetup>
+   <Zoom>85</Zoom>
+   <PageBreakZoom>60</PageBreakZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>29</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="dragonquestphase3">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="25" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="139.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="54.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="75.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="86.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="65.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="107.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="78"/>
+   <Row>
+    <Cell ss:StyleID="s65"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">boss等级</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">boss第三阶段动画id</Data></Cell>
+    <Cell><Data ss:Type="String">武力</Data></Cell>
+    <Cell><Data ss:Type="String">智力</Data></Cell>
+    <Cell><Data ss:Type="String">物防</Data></Cell>
+    <Cell><Data ss:Type="String">法防</Data></Cell>
+    <Cell><Data ss:Type="String">技能id</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:Index="15"><Data ss:Type="String">难度倍率</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1001</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1002</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">132</Data></Cell>
+    <Cell><Data ss:Type="Number">1003</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">142</Data></Cell>
+    <Cell><Data ss:Type="Number">1004</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1005</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">1006</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">1007</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">1008</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">1009</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1010</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">1011</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">1012</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">1013</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1014</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">252</Data></Cell>
+    <Cell><Data ss:Type="Number">1015</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">1016</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">1017</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">1018</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">1019</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">1020</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">1021</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">322</Data></Cell>
+    <Cell><Data ss:Type="Number">1022</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">120001</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Formula="=RC[-1]+12"><Data ss:Type="Number">332</Data></Cell>
+    <Cell><Data ss:Type="Number">1023</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="15"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111107"
+     x:Right="0.69861111111111107" x:Top="0.75"/>
+   </PageSetup>
+   <PageBreakZoom>60</PageBreakZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>25</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="dragonrankreward">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s41" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="14.25">
+   <Column ss:Index="7" ss:StyleID="s41" ss:Width="57"/>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">伤害排名</Data><Comment ss:Author="作者"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><Font html:Size="9">作者:&#10;0为击杀奖励</Font></ss:Data></Comment></Cell>
+    <Cell><Data ss:Type="String">声望最高</Data></Cell>
+    <Cell><Data ss:Type="String">声望最低</Data></Cell>
+    <Cell><Data ss:Type="String">金钱最高</Data></Cell>
+    <Cell><Data ss:Type="String">金钱最低</Data></Cell>
+    <Cell ss:StyleID="s41"/>
+    <Cell ss:Index="8"><Data ss:Type="String">排名</Data></Cell>
+    <Cell><Data ss:Type="String">声望</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">2000</Data></Cell>
+    <Cell><Data ss:Type="Number">2000</Data></Cell>
+    <Cell><Data ss:Type="Number">120000</Data></Cell>
+    <Cell><Data ss:Type="Number">120000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1350</Data></Cell>
+    <Cell><Data ss:Type="Number">1350</Data></Cell>
+    <Cell><Data ss:Type="Number">81000</Data></Cell>
+    <Cell><Data ss:Type="Number">81000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1200</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">72000</Data></Cell>
+    <Cell><Data ss:Type="Number">60000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">850</Data></Cell>
+    <Cell><Data ss:Type="Number">650</Data></Cell>
+    <Cell><Data ss:Type="Number">51000</Data></Cell>
+    <Cell><Data ss:Type="Number">39000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">600</Data></Cell>
+    <Cell><Data ss:Type="Number">420</Data></Cell>
+    <Cell><Data ss:Type="Number">36000</Data></Cell>
+    <Cell><Data ss:Type="Number">25200</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">400</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell><Data ss:Type="Number">24000</Data></Cell>
+    <Cell><Data ss:Type="Number">18000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="Number">17400</Data></Cell>
+    <Cell><Data ss:Type="Number">12000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">500</Data></Cell>
+    <Cell><Data ss:Type="Number">195</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell><Data ss:Type="Number">11700</Data></Cell>
+    <Cell><Data ss:Type="Number">9000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">8700</Data></Cell>
+    <Cell><Data ss:Type="Number">6000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">99999</Data></Cell>
+    <Cell><Data ss:Type="Number">98</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="Number">5880</Data></Cell>
+    <Cell><Data ss:Type="Number">3000</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111107"
+     x:Right="0.69861111111111107" x:Top="0.75"/>
+   </PageSetup>
+   <PageBreakZoom>60</PageBreakZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>40</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Cordial</Author>
+  <LastAuthor>Cordial</LastAuthor>
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2014-09-23T10:16:29Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-9.1.0.4843</KSOProductBuildVer>
+ </CustomDocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>\map\策划\monster3.4.xls</Path>
+   <SheetName>npc</SheetName>
+   <SheetName>rune</SheetName>
+   <SheetName>randomgroup</SheetName>
+   <SheetName>masterablity</SheetName>
+   <SheetName>item</SheetName>
+   <SheetName>activities</SheetName>
+  </SupBook>
+  <SupBook>
+   <Path>\map\策划\版本3.3.4\card.xls</Path>
+   <SheetName>cardgroup</SheetName>
+   <SheetName>card</SheetName>
+  </SupBook>
+  <SupBook>
+   <Path>\map\策划\立项\GUN\gun正式.xls</Path>
+   <SheetName>Skill</SheetName>
+   <SheetName>Enemy</SheetName>
+   <SheetName>achevements</SheetName>
+   <SheetName>item</SheetName>
+  </SupBook>
+  <SupBook>
+   <Path>\map\策划\版本3.3.4\guild.xls</Path>
+   <SheetName>guildactivities</SheetName>
+  </SupBook>
+  <SupBook>
+   <Path>\map\策划\版本3.3.4\world.xls</Path>
+   <SheetName>maze</SheetName>
+  </SupBook>
+  <SupBook>
+   <Path>\map\策划\立项\GUN\ship-level.xls</Path>
+   <SheetName>pay</SheetName>
+  </SupBook>
+  <WindowHeight>12630</WindowHeight>
+  <WindowWidth>28680</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="常规 2">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63" ss:Parent="s62">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s64" ss:Parent="s62">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s65" ss:Parent="s62">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s66" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s67" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s68" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="黑体" x:CharSet="134" x:Family="Modern" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s69" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s70" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#FF0000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s71" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="_xlfn.IFERROR" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlfn.IFNA" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="NPC功能列表"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]npc'!R2C19:R17C19"/>
+  <NamedRange ss:Name="抽卡卡包"
+   ss:RefersTo="='\map\策划\版本3.3.4\[card.xls]cardgroup'!R2C8:R5C8"/>
+  <NamedRange ss:Name="敌人死亡动画"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]Skill'!R2C42:R5C42"/>
+  <NamedRange ss:Name="飞行物轨迹"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]Skill'!R2C43:R6C43"/>
+  <NamedRange ss:Name="符文类型"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]rune'!R2C15:R10C15"/>
+  <NamedRange ss:Name="符文品阶"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]rune'!R2C16:R8C16"/>
+  <NamedRange ss:Name="格子类型"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]randomgroup'!R2C9:R15C9"/>
+  <NamedRange ss:Name="公会活动类型"
+   ss:RefersTo="='\map\策划\版本3.3.4\[guild.xls]guildactivities'!R2C16:R6C16"/>
+  <NamedRange ss:Name="攻击策略"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]Enemy'!R2C30:R8C30"/>
+  <NamedRange ss:Name="技能类型"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]Skill'!R2C40:R15C40"/>
+  <NamedRange ss:Name="加点效果"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]masterablity'!R2C13:R6C13"/>
+  <NamedRange ss:Name="卡牌技能生效范围"
+   ss:RefersTo="='\map\策划\版本3.3.4\[card.xls]card'!R2C30:R12C30"/>
+  <NamedRange ss:Name="开启条件列表"
+   ss:RefersTo="='\map\策划\版本3.3.4\[world.xls]maze'!R2C26:R5C26"/>
+  <NamedRange ss:Name="迷宫类型"
+   ss:RefersTo="='\map\策划\版本3.3.4\[world.xls]maze'!R2C27:R4C27"/>
+  <NamedRange ss:Name="生效对象"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]achevements'!R2C36:R9C36"/>
+  <NamedRange ss:Name="使用对象"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]item'!R2C29:R4C29"/>
+  <NamedRange ss:Name="完成条件"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]achevements'!R2C35:R21C35"/>
+  <NamedRange ss:Name="物品类型"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]item'!R2C27:R19C27"/>
+  <NamedRange ss:Name="物品效果"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]item'!R2C28:R44C28"/>
+  <NamedRange ss:Name="优惠图"
+   ss:RefersTo="='\map\策划\立项\GUN\[ship-level.xls]pay'!R23C9:R25C9"/>
+  <NamedRange ss:Name="游戏活动类型"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]activities'!R2C20:R26C20"/>
+  <NamedRange ss:Name="驭兽效果"
+   ss:RefersTo="='\map\策划\[monster3.4.xls]masterablity'!R2C13:R6C13"/>
+  <NamedRange ss:Name="装备特性"
+   ss:RefersTo="='\map\策划\立项\GUN\[gun正式.xls]item'!R2C24:R6C24"/>
+ </Names>
+ <Worksheet ss:Name="slot">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s63" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="14.25">
+   <Column ss:Index="6" ss:StyleID="s63" ss:Width="104.25"/>
+   <Column ss:StyleID="s63" ss:Width="146.25" ss:Span="2"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">编号</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">图片</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">名称</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">分数</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">倍率</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">拉杆时出现权重</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">改运第一个时出现权重</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">改运第二个时出现权重</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">改运第三个时出现权重</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">小宝箱</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">中宝箱</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">大宝箱</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">幸运7</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">X1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">X2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">X3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111096"
+     x:Right="0.69861111111111096" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>17</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="slotreward">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s63" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="14.25">
+   <Column ss:Index="2" ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="70.5"/>
+   <Column ss:Index="4" ss:StyleID="s63" ss:Width="36"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">编号组成</Data></Cell>
+    <Cell><Data ss:Type="String">奖励分数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">1,1</Data></Cell>
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">1,1,1</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">2,2</Data></Cell>
+    <Cell><Data ss:Type="Number">60</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2,2,2</Data></Cell>
+    <Cell><Data ss:Type="Number">225</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">3,3</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">3,3,3</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">4,4,4</Data></Cell>
+    <Cell><Data ss:Type="Number">999</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s69"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.69861111111111096"
+     x:Right="0.69861111111111096" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>9</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

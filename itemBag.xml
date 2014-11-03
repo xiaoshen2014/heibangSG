@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>FU</Author>
+  <LastAuthor>FU</LastAuthor>
+  <Created>2014-09-24T03:23:12Z</Created>
+  <LastSaved>2014-09-24T03:42:06Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8700</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="itemBag">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="25" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:Width="68"/>
+   <Column ss:Width="45"/>
+   <Column ss:Width="66"/>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">物品包编号</Data></Cell>
+    <Cell><Data ss:Type="String">物品ID</Data></Cell>
+    <Cell><Data ss:Type="String">物品数量</Data></Cell>
+    <Cell><Data ss:Type="String">物品等级</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">物品名称</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼铁砂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼精铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼熟铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100004</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">基因</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">小经验符文</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">经验卡(小)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100007</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">金钱</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70001</Data></Cell>
+    <Cell><Data ss:Type="Number">100008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">银币</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100009</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼铁砂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100010</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼精铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100011</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼熟铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100012</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">基因</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">小经验符文</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">经验卡(小)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">100003</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">金钱</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="Number">200002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">银币</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">200003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼铁砂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">200004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼精铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">200005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">凶狼熟铁</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">200006</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">基因</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">200007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">小经验符文</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">100010</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">经验卡(小)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">100011</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">金钱</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="Number">100012</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">银币</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Zoom>175</Zoom>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+     <RangeSelection>R17C2:R22C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>FU</Author>
+  <LastAuthor>FU</LastAuthor>
+  <Created>2014-09-28T09:35:54Z</Created>
+  <LastSaved>2014-10-09T10:35:59Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>15640</WindowHeight>
+  <WindowWidth>18360</WindowWidth>
+  <WindowTopX>20040</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s63">
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s64">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="time">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="6" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:Index="3" ss:Width="79"/>
+   <Column ss:Index="7" ss:Width="109"/>
+   <Column ss:Index="9" ss:Width="103"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">类型</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">名字</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">数值1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">数值2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">持续时间</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">绝对开始时间</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">开始事件</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">相对开始时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">101</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">黑市</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">黑市常规</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">101202</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">开服</Data></Cell>
+    <Cell><Data ss:Type="String">0,0,0,0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">102</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">黑市</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">黑市打折</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">101202</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1,23,30,15</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2014-10-29 20:22:27</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">103</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">活动公告</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">公告板常规</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1003</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:Index="8" ss:StyleID="s62"><Data ss:Type="String">开服</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">0,0,0,0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">104</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">活动公告</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">国庆活动</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1001,1002</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1,23,30,15</Data></Cell>
+    <Cell ss:Index="8" ss:StyleID="s62"><Data ss:Type="String">开服</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1,2,40,15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">105</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">活动公告</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">武斗大会</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">202</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">1,23,30,15</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2014-10-29 20:22:27</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Zoom>265</Zoom>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

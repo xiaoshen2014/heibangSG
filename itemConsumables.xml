@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2014-09-26T02:30:47Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11940</WindowHeight>
+  <WindowWidth>38400</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="堆叠数" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="格子类型" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="品阶" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象2" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象3" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品类型" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品类型2" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品效果" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="NPC功能列表" ss:RefersTo="=#REF!"/>
+ </Names>
+ <Worksheet ss:Name="itemConsumables">
+  <Table ss:ExpandedColumnCount="21" ss:ExpandedRowCount="10" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Width="45"/>
+   <Column ss:Width="67"/>
+   <Column ss:Width="63"/>
+   <Column ss:Index="6" ss:Width="32"/>
+   <Column ss:Index="8" ss:Width="215"/>
+   <Column ss:Width="43"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="73"/>
+   <Column ss:Width="85"/>
+   <Column ss:Width="66" ss:Span="1"/>
+   <Column ss:Index="20" ss:Width="32"/>
+   <Column ss:Width="43"/>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="String">物品ID</Data></Cell>
+    <Cell><Data ss:Type="String">物品图片ID</Data></Cell>
+    <Cell><Data ss:Type="String">类型</Data></Cell>
+    <Cell><Data ss:Type="String">使用对象</Data></Cell>
+    <Cell><Data ss:Type="String">使用数值</Data></Cell>
+    <Cell><Data ss:Type="String">品阶</Data></Cell>
+    <Cell><Data ss:Type="String">名字</Data></Cell>
+    <Cell><Data ss:Type="String">描述</Data></Cell>
+    <Cell><Data ss:Type="String">可堆叠</Data></Cell>
+    <Cell><Data ss:Type="String">买入价-游戏币</Data></Cell>
+    <Cell><Data ss:Type="String">买入价-水晶</Data></Cell>
+    <Cell><Data ss:Type="String">卖出价-游戏币</Data></Cell>
+    <Cell><Data ss:Type="String">宝箱组ID</Data></Cell>
+    <Cell><Data ss:Type="String">宝箱钥匙串</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">类型</Data></Cell>
+    <Cell><Data ss:Type="String">使用对象</Data></Cell>
+    <Cell><Data ss:Type="String">品阶</Data></Cell>
+    <Cell><Data ss:Type="String">堆叠数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="String">钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">略</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">物品</Data></Cell>
+    <Cell><Data ss:Type="String">无</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200003</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">礼包</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell><Data ss:Type="Number">70003</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="String">首充礼包</Data></Cell>
+    <Cell><Data ss:Type="String">开启后获得首冲礼品</Data></Cell>
+    <Cell><Data ss:Type="String">否</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">武将</Data></Cell>
+    <Cell><Data ss:Type="String">灰色</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200004</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">钥匙宝箱</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell><Data ss:Type="Number">70002</Data></Cell>
+    <Cell><Data ss:Type="String">蓝色</Data></Cell>
+    <Cell><Data ss:Type="String">宝箱</Data></Cell>
+    <Cell><Data ss:Type="String">宝箱内含珍贵材料，需要宝箱钥匙开启</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">200002</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">礼包</Data></Cell>
+    <Cell><Data ss:Type="String">纹身</Data></Cell>
+    <Cell><Data ss:Type="String">蓝色</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200005</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="String">宝箱钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">珍贵物品，用来开启宝箱。</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">宝箱</Data></Cell>
+    <Cell><Data ss:Type="String">饰品</Data></Cell>
+    <Cell><Data ss:Type="String">黄色</Data></Cell>
+    <Cell><Data ss:Type="Number">999</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200006</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">武将经验</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="String">经验卡</Data></Cell>
+    <Cell><Data ss:Type="String">使用可获得武将经验</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">宝箱钥匙</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell><Data ss:Type="String">紫色</Data></Cell>
+    <Cell><Data ss:Type="Number">9999</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">200007</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">体力</Data></Cell>
+    <Cell><Data ss:Type="String">角色</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="String">紫色</Data></Cell>
+    <Cell><Data ss:Type="String">体力包</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">是</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">经验</Data></Cell>
+    <Cell ss:Index="20"><Data ss:Type="String">橙色</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:Index="18"><Data ss:Type="String">武将经验</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:Index="18"><Data ss:Type="String">VIP体验</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:Index="18"><Data ss:Type="String">纹身</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Zoom>190</Zoom>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

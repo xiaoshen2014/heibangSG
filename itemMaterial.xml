@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2014-09-23T09:30:15Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8120</WindowHeight>
+  <WindowWidth>38400</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="堆叠数" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="格子类型" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="品阶" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象2" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="使用对象3" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="是否" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品类型" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品类型2" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="物品效果" ss:RefersTo="=#REF!"/>
+  <NamedRange ss:Name="NPC功能列表" ss:RefersTo="=#REF!"/>
+ </Names>
+ <Worksheet ss:Name="itemMaterial">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="13" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:Width="63"/>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="String">物品ID</Data></Cell>
+    <Cell><Data ss:Type="String">物品图片ID</Data></Cell>
+    <Cell><Data ss:Type="String">类型</Data></Cell>
+    <Cell><Data ss:Type="String">是否占包裹</Data></Cell>
+    <Cell><Data ss:Type="String">品阶</Data></Cell>
+    <Cell><Data ss:Type="String">名字</Data></Cell>
+    <Cell><Data ss:Type="String">描述</Data></Cell>
+    <Cell><Data ss:Type="String">可堆叠</Data></Cell>
+    <Cell><Data ss:Type="String">买入价-游戏币</Data></Cell>
+    <Cell><Data ss:Type="String">买入价-水晶</Data></Cell>
+    <Cell><Data ss:Type="String">卖出价-游戏币</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">矿物</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="10"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell><Data ss:Type="Number">1000000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">武将碎片</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell><Data ss:Type="String">潘凤</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100003</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">武将碎片</Data></Cell>
+    <Cell><Data ss:Type="String">否</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100004</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">金钱</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100005</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">矿物A</Data></Cell>
+    <Cell><Data ss:Type="String">否</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100006</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">矿物B</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100007</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">矿物C</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100008</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">材料</Data></Cell>
+    <Cell><Data ss:Type="String">否</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="Number">99999</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100009</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">金钱</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100010</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">水晶</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100011</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">体力</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell><Data ss:Type="Number">100012</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">纹身</Data></Cell>
+    <Cell><Data ss:Type="String">是</Data></Cell>
+    <Cell><Data ss:Type="String">白色</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">是</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>220</Zoom>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+     <RangeSelection>R12C8:R13C8</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
